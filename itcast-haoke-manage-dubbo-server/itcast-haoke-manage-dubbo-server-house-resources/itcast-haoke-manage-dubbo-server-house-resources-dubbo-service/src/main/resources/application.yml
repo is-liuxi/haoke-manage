@@ -1,0 +1,24 @@
+spring:
+  application:
+    # 服务名称
+    name: itcast-haoke-manage-dubbo-server-house-resources-dubbo-interface
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://192.168.92.121:3307/itcast_haoke?charsetEncoding=utf8&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+dubbo:
+  application:
+    # 应用名称
+    name: dubbo-provider-house-resource
+  protocol:
+    # 协议
+    name: dubbo
+    port: 20881
+  registry:
+    # ZK 地址
+    address: zookeeper://192.168.92.121:2182
+    client: zkclient
+logging:
+  level:
+    root: DEBUG

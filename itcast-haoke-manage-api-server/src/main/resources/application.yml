@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: itcast-haoke-manage-api-server
+dubbo:
+  application:
+    name: dubbo-consumer-house-resources
+  registry:
+    address: zookeeper://192.168.92.121:2182
+    client: zkclient
+server:
+  port: 83
+logging:
+  level:
+    root: DEBUG
