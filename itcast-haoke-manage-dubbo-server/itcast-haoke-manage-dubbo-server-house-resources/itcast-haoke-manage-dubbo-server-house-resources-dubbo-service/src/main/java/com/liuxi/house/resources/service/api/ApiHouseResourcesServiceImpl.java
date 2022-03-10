@@ -2,6 +2,7 @@ package com.liuxi.house.resources.service.api;
 
 import com.alibaba.dubbo.config.annotation.Service;
 import com.liuxi.house.resource.interfaces.pojo.entity.HouseResources;
+import com.liuxi.house.resource.interfaces.pojo.vo.PageInfo;
 import com.liuxi.house.resource.interfaces.server.api.ApiHouseResourcesService;
 import com.liuxi.house.resources.service.service.HouseResourcesService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,5 +24,11 @@ public class ApiHouseResourcesServiceImpl implements ApiHouseResourcesService {
     public int saveHouseResources(HouseResources houseResources) {
 
         return houseResourcesService.saveHouseResources(houseResources);
+    }
+
+    @Override
+    public PageInfo<HouseResources> queryHouseResourcesList(int page, int pageSize, HouseResources houseResources) {
+
+        return houseResourcesService.queryHouseResourcesList(page, pageSize, houseResources);
     }
 }

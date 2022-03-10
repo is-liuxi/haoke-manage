@@ -1,7 +1,10 @@
 package com.liuxi.hourse.resources.consumer.api.service;
 
 import com.alibaba.dubbo.config.annotation.Reference;
+import com.liuxi.hourse.resources.consumer.vo.PageTableResult;
+import com.liuxi.hourse.resources.consumer.vo.Pagination;
 import com.liuxi.house.resource.interfaces.pojo.entity.HouseResources;
+import com.liuxi.house.resource.interfaces.pojo.vo.PageInfo;
 import com.liuxi.house.resource.interfaces.server.api.ApiHouseResourcesService;
 import org.springframework.stereotype.Service;
 
@@ -26,5 +29,18 @@ public class HouseResourcesService {
     public Integer saveHouseResources(HouseResources houseResources) {
 
         return this.apiHouseResourcesService.saveHouseResources(houseResources);
+    }
+
+    /**
+     * 分页条件查询房源列表
+     * @param currentPage
+     * @param pageSize
+     * @param houseResources
+     * @return
+     */
+    public PageTableResult<HouseResources> queryHouseResourcesList(int currentPage, int pageSize, HouseResources houseResources) {
+        PageInfo<HouseResources> houseResourcesPageInfo = this.apiHouseResourcesService.queryHouseResourcesList(currentPage, pageSize, houseResources);
+        return new PageTableResult<>(houseResourcesPageInfo.getRecords(),
+                new Pagination(currentPage, pageSize, houseResourcesPageInfo.getTotal()));
     }
 }
