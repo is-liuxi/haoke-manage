@@ -31,4 +31,10 @@ public class ApiHouseResourcesServiceImpl implements ApiHouseResourcesService {
 
         return houseResourcesService.queryHouseResourcesList(page, pageSize, houseResources);
     }
+
+    @Override
+    public HouseResources queryHouseResourcesById(Long id) {
+
+        return houseResourcesService.queryHouseResourcesById(id);
+    }
 }

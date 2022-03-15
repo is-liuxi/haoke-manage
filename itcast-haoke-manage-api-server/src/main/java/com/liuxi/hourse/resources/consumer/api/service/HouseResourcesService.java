@@ -43,4 +43,14 @@ public class HouseResourcesService {
         return new PageTableResult<>(houseResourcesPageInfo.getRecords(),
                 new Pagination(currentPage, pageSize, houseResourcesPageInfo.getTotal()));
     }
+
+    /**
+     * 根据 ID 查询房源数据
+     * @param id
+     * @return
+     */
+    public HouseResources queryHouseResourcesById(Long id) {
+
+        return this.apiHouseResourcesService.queryHouseResourcesById(id);
+    }
 }

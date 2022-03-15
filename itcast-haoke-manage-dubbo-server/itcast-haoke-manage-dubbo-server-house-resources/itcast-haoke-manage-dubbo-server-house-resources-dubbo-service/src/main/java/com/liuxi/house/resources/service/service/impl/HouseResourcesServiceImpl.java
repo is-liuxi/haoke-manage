@@ -65,4 +65,10 @@ public class HouseResourcesServiceImpl extends BaseServiceImpl<HouseResources> i
                 && StringUtils.isNotEmpty(houseResources.getContact()) && StringUtils.isNotEmpty(houseResources.getMobile())
                 && houseResources.getTime() != null;
     }
+
+    @Override
+    public HouseResources queryHouseResourcesById(Long id) {
+
+        return this.queryById(id);
+    }
 }

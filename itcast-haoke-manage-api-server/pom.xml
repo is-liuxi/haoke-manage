@@ -21,7 +21,12 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <!-- 配置文件与 pojo 类映射 -->
         <dependency>
             <groupId>com.liuxi.itcast.haoke</groupId>
             <artifactId>itcast-haoke-manage-dubbo-server-house-resources-dubbo-interface</artifactId>
@@ -41,5 +46,11 @@
             <version>2.10.13</version>
         </dependency>
 
+        <!-- GraphQL，类似 RESTFul 风格 -->
+        <dependency>
+            <groupId>com.graphql-java</groupId>
+            <artifactId>graphql-java</artifactId>
+            <version>11.0</version>
+        </dependency>
     </dependencies>
 </project>

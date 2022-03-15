@@ -1,6 +1,5 @@
 package com.liuxi.house.resource.interfaces.server.api;
 
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.liuxi.house.resource.interfaces.pojo.entity.HouseResources;
 import com.liuxi.house.resource.interfaces.pojo.vo.PageInfo;
 
@@ -28,4 +27,11 @@ public interface ApiHouseResourcesService {
      * @return
      */
     PageInfo<HouseResources> queryHouseResourcesList(int page, int pageSize, HouseResources houseResources);
+
+    /**
+     * 根据 ID 查询房源数据
+     * @param id
+     * @return
+     */
+    HouseResources queryHouseResourcesById(Long id);
 }

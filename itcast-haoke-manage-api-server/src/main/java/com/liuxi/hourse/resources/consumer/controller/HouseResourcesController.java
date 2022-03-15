@@ -28,9 +28,9 @@ public class HouseResourcesController {
         return this.houseResourcesService.saveHouseResources(houseResources);
     }
 
-    @GetMapping("queryHouseResourcesList/{currentPage}/{pageSize}")
-    public PageTableResult<HouseResources> queryHouseResourcesList(@PathVariable("currentPage") Integer currentPage,
-                                                                   @PathVariable("pageSize") Integer pageSize,
+    @GetMapping("queryHouseResourcesList")
+    public PageTableResult<HouseResources> queryHouseResourcesList(@RequestParam("currentPage") Integer currentPage,
+                                                                   @RequestParam("pageSize") Integer pageSize,
                                                                    @RequestBody(required = false) HouseResources houseResources) {
         log.info("当前页：{}，页面显示大小：{}，查询条件：{}", currentPage, pageSize, houseResources);
 
