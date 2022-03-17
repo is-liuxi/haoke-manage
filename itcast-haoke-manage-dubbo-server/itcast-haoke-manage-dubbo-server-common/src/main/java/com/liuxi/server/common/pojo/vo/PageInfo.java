@@ -1,4 +1,4 @@
-package com.liuxi.house.resource.interfaces.pojo.vo;
+package com.liuxi.server.common.pojo.vo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

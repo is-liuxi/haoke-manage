@@ -1,8 +1,8 @@
 ## 技术栈
 ```
 SpringBoot、SpringMVC
-Dubbo
-Mybaits、MySQL
+Dubbo、Zookeeper
+Mybaits-plus、MySQL
 GraphQL
 fastDFS
 

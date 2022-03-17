@@ -1,9 +1,9 @@
-package com.liuxi.house.resource.interfaces.pojo.entity;
+package com.liuxi.house.resource.interfaces.pojo;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-import com.liuxi.house.resource.interfaces.pojo.BasePojo;
+import com.liuxi.server.common.pojo.BasePojo;
 import lombok.Data;
 import lombok.experimental.Accessors;
 

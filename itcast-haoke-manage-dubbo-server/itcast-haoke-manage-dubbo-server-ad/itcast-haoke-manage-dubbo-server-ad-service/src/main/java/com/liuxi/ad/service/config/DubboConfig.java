@@ -1,4 +1,4 @@
-package com.liuxi.house.resources.service.config;
+package com.liuxi.ad.service.config;
 
 import com.alibaba.dubbo.config.spring.context.annotation.DubboComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -8,11 +8,10 @@ import org.springframework.context.annotation.Configuration;
  *
  * </P>
  * @author liu xi
- * @date 2022/3/8 4:19
+ * @date 2022/3/16 23:55
  */
 @Configuration
-@DubboComponentScan("com.liuxi.house.resources.service.dubbo.impl.api")
+@DubboComponentScan("com.liuxi.ad.service.dubbo.impl.api")
 public class DubboConfig {
-
 
 }

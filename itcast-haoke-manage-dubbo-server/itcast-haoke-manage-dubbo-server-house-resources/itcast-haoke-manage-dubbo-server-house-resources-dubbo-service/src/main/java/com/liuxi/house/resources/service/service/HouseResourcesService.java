@@ -1,7 +1,7 @@
 package com.liuxi.house.resources.service.service;
 
-import com.liuxi.house.resource.interfaces.pojo.entity.HouseResources;
-import com.liuxi.house.resource.interfaces.pojo.vo.PageInfo;
+import com.liuxi.house.resource.interfaces.pojo.HouseResources;
+import com.liuxi.server.common.pojo.vo.PageInfo;
 
 /**
  * <p>

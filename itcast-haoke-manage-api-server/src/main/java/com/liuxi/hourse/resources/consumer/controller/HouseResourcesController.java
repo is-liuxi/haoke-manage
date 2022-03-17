@@ -2,7 +2,7 @@ package com.liuxi.hourse.resources.consumer.controller;
 
 import com.liuxi.hourse.resources.consumer.api.service.HouseResourcesService;
 import com.liuxi.hourse.resources.consumer.vo.PageTableResult;
-import com.liuxi.house.resource.interfaces.pojo.entity.HouseResources;
+import com.liuxi.house.resource.interfaces.pojo.HouseResources;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

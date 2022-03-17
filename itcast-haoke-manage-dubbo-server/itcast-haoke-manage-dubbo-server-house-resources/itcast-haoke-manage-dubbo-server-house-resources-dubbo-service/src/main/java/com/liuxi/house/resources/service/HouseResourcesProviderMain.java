@@ -12,10 +12,10 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
  * @date 2022/3/8 4:17
  */
 @SpringBootApplication
-public class DubboProviderServerMain {
+public class HouseResourcesProviderMain {
     public static void main(String[] args) {
 
-        new SpringApplicationBuilder(DubboProviderServerMain.class)
+        new SpringApplicationBuilder(HouseResourcesProviderMain.class)
                 .web(WebApplicationType.NONE)
                 .run(args);
     }

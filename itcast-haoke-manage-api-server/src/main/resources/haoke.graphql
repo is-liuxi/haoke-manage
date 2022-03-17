@@ -6,7 +6,7 @@ schema {
 # 定义查询类型
 type HaoKeQuery {
     # 查询名字 HouseResources，参数。返回值：HouseResources
-    HouseResources(id:Long) : HouseResources
+    queryHouseResourcesById(id:Long) : HouseResources
 }
 
 type HouseResources {

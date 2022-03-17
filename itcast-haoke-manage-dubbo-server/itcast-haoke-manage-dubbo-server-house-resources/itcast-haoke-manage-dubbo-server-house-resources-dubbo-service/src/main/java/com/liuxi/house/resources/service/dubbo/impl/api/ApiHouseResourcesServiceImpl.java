@@ -1,10 +1,10 @@
-package com.liuxi.house.resources.service.api;
+package com.liuxi.house.resources.service.dubbo.impl.api;
 
 import com.alibaba.dubbo.config.annotation.Service;
-import com.liuxi.house.resource.interfaces.pojo.entity.HouseResources;
-import com.liuxi.house.resource.interfaces.pojo.vo.PageInfo;
-import com.liuxi.house.resource.interfaces.server.api.ApiHouseResourcesService;
+import com.liuxi.house.resource.interfaces.pojo.HouseResources;
+import com.liuxi.house.resource.interfaces.dubbo.server.api.ApiHouseResourcesService;
 import com.liuxi.house.resources.service.service.HouseResourcesService;
+import com.liuxi.server.common.pojo.vo.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**

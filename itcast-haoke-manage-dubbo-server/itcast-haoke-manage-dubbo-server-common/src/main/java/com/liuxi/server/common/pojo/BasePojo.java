@@ -1,4 +1,4 @@
-package com.liuxi.house.resource.interfaces.pojo;
+package com.liuxi.server.common.pojo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
-import java.util.Date;
 
 /**
  * <p>

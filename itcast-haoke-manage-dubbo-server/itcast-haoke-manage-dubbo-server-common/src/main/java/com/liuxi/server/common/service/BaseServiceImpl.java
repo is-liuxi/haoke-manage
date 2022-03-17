@@ -1,4 +1,4 @@
-package com.liuxi.house.resources.service.common;
+package com.liuxi.server.common.service;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
@@ -64,13 +64,13 @@ public abstract class BaseServiceImpl<T extends BasePojo> {
     /**
      * 根据条件分页查询数据列表
      * @param queryWrapper
-     * @param page
-     * @param rows
+     * @param currentPage
+     * @param pageSize
      * @return
      */
-    public IPage<T> queryPageListByWhere(QueryWrapper<T> queryWrapper, Integer page, Integer rows) {
+    public IPage<T> queryPageListByWhere(QueryWrapper<T> queryWrapper, Integer currentPage, Integer pageSize) {
 
-        return this.mapper.selectPage(new Page<>(page, rows), queryWrapper);
+        return this.mapper.selectPage(new Page<>(currentPage, pageSize), queryWrapper);
     }
 
     /**

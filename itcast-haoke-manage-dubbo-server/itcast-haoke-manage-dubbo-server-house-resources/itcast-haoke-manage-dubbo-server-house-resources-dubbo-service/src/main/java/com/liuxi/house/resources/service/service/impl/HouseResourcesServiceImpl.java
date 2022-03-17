@@ -2,12 +2,12 @@ package com.liuxi.house.resources.service.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.liuxi.house.resource.interfaces.pojo.entity.HouseResources;
-import com.liuxi.house.resource.interfaces.pojo.vo.PageInfo;
+import com.liuxi.house.resource.interfaces.pojo.HouseResources;
 import com.liuxi.house.resources.service.common.BaseServiceImpl;
 import com.liuxi.house.resources.service.common.ResultFieldCommons;
 import com.liuxi.house.resources.service.mapper.HouseResourcesMapper;
 import com.liuxi.house.resources.service.service.HouseResourcesService;
+import com.liuxi.server.common.pojo.vo.PageInfo;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

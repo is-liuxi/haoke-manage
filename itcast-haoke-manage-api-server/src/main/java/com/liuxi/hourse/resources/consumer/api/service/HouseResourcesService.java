@@ -3,9 +3,9 @@ package com.liuxi.hourse.resources.consumer.api.service;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.liuxi.hourse.resources.consumer.vo.PageTableResult;
 import com.liuxi.hourse.resources.consumer.vo.Pagination;
-import com.liuxi.house.resource.interfaces.pojo.entity.HouseResources;
-import com.liuxi.house.resource.interfaces.pojo.vo.PageInfo;
-import com.liuxi.house.resource.interfaces.server.api.ApiHouseResourcesService;
+import com.liuxi.house.resource.interfaces.pojo.HouseResources;
+import com.liuxi.house.resource.interfaces.dubbo.server.api.ApiHouseResourcesService;
+import com.liuxi.server.common.pojo.vo.PageInfo;
 import org.springframework.stereotype.Service;
 
 /**

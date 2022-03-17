@@ -22,7 +22,7 @@ public class HouseResourcesDataFetcher implements MyDateFetcher {
     @Override
     public String fieldName() {
         // 查询名字
-        return "HouseResources";
+        return "queryHouseResourcesById";
     }
 
     @Override
