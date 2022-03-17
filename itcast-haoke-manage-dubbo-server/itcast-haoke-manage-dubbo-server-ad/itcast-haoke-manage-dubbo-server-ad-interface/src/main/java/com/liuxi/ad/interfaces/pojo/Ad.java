@@ -8,6 +8,8 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
+import java.io.Serializable;
+
 /**
  * <p>
  *
@@ -15,11 +17,12 @@ import lombok.experimental.Accessors;
  * @author liu xi
  * @date 2022/3/16 22:50
  */
-@EqualsAndHashCode(callSuper = true)
 @Data
 @Accessors(chain = true)
 @TableName("tb_ad")
 public class Ad extends BasePojo {
+
+    private static final long serialVersionUID = 1L;
 
     @TableId(value = "id", type = IdType.AUTO)
     private Long id;

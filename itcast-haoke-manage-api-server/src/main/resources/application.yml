@@ -1,6 +1,12 @@
 spring:
   application:
     name: itcast-haoke-manage-api-server
+  # Redis
+  redis:
+    host: 192.168.92.121
+    port: 6380
+    timeout: 30
+# Dubbo
 dubbo:
   application:
     name: dubbo-consumer-house-resources

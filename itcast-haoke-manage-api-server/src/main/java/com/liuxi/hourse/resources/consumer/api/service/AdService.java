@@ -1,10 +1,13 @@
 package com.liuxi.hourse.resources.consumer.api.service;
 
 import com.alibaba.dubbo.config.annotation.Reference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.liuxi.ad.interfaces.dubbo.server.api.ApiAdService;
 import com.liuxi.ad.interfaces.pojo.Ad;
 import com.liuxi.hourse.resources.consumer.vo.WebResult;
 import com.liuxi.server.common.pojo.vo.PageInfo;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -24,6 +27,11 @@ public class AdService {
 
     @Reference(version = "1.0.0")
     private ApiAdService apiAdService;
+
+    @Autowired
+    private RedisTemplate<String, String> redisTemplate;
+
+    private ObjectMapper objectMapper = new ObjectMapper();
 
     /**
      * 查询轮播图

@@ -2,8 +2,8 @@
 ```
 SpringBoot、SpringMVC
 Dubbo、Zookeeper
-Mybaits-plus、MySQL
+Mybaits-plus、MySQL、Redis
 GraphQL
-fastDFS
+fastDFS、Docker
 
 ```
