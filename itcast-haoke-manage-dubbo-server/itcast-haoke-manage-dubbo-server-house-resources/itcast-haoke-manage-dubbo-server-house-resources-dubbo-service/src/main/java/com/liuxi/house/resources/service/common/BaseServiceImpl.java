@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.liuxi.house.resource.interfaces.pojo.BasePojo;
+import com.liuxi.server.common.pojo.BasePojo;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.time.LocalDateTime;
@@ -63,14 +63,14 @@ public abstract class BaseServiceImpl<T extends BasePojo> {
 
     /**
      * 根据条件分页查询数据列表
-     * @param record
+     * @param queryWrapper
      * @param page
      * @param rows
      * @return
      */
-    public IPage<T> queryPageListByWhere(T record, Integer page, Integer rows) {
+    public IPage<T> queryPageListByWhere(QueryWrapper<T> queryWrapper, Integer page, Integer rows) {
 
-        return this.mapper.selectPage(new Page<>(page, rows), new QueryWrapper<>(record));
+        return this.mapper.selectPage(new Page<>(page, rows), queryWrapper);
     }
 
     /**

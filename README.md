@@ -1,1 +1,9 @@
-## 技术栈：SpringBoot、SpringMVC、Mybaits、Dubbo等框架技术
+## 技术栈
+```
+SpringBoot、SpringMVC
+Dubbo、Zookeeper
+Mybaits-plus、MySQL
+GraphQL
+fastDFS
+
+```

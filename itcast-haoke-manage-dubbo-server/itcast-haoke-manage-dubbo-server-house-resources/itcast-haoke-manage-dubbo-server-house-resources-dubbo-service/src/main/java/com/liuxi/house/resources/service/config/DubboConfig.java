@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
  * @date 2022/3/8 4:19
  */
 @Configuration
-@DubboComponentScan("com.liuxi.house.resources.service.api")
+@DubboComponentScan("com.liuxi.house.resources.service.dubbo.impl.api")
 public class DubboConfig {
 
 

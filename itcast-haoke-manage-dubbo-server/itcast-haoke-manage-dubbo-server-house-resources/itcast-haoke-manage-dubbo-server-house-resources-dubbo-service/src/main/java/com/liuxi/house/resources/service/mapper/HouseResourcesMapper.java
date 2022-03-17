@@ -1,7 +1,7 @@
 package com.liuxi.house.resources.service.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.liuxi.house.resource.interfaces.pojo.entity.HouseResources;
+import com.liuxi.house.resource.interfaces.pojo.HouseResources;
 
 /**
  * <p>
